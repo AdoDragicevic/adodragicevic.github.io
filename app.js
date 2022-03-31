@@ -1,19 +1,19 @@
+( () => {
 
+  const btnContact     = document.getElementById("btn-contact");
+  const btnNavbar      = document.getElementById("btn-navbar");
 
-  const btnContactMe   = document.getElementById("btn-contact-me");
-  const overlay        = document.getElementById("overlay");
-  const overlayContent = document.getElementById("overlay-content");
+  const overlayContact = document.getElementById("overlay-contact");
+  const overlayNavbar  = document.getElementById("overlay-navbar");
 
-  btnContactMe.addEventListener("click", toggleModal);
-  overlay.addEventListener("click", toggleModal);
-  overlayContent.addEventListener("click", e => e.prevnetPropagation());
+  const showModal = el => el.setAttribute("class", "overlay");
+  const hideModal = el => el.setAttribute("class", "overlay d-none");
 
-  function toggleModal() {
-    const isHidden = overlay.classList.contains("d-none");
-    if (isHidden) {
-      overlay.classList.remove("d-none");
-    }
-    else {
-      overlay.classList.add("d-none");
-    }
-  }
+  btnContact.addEventListener("click", showModal.bind(this, overlayContact));
+  btnNavbar.addEventListener("click", showModal.bind(this, overlayNavbar));
+
+  overlayContact.addEventListener("click", hideModal.bind(this, overlayContact));
+  overlayNavbar.addEventListener("click", hideModal.bind(this, overlayNavbar));
+
+})();
+
