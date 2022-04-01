@@ -16,4 +16,3 @@
   overlayNavbar.addEventListener("click", hideModal.bind(this, overlayNavbar));
 
 })();
-

@@ -6,7 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <title>Ado Dragicevic | Portfolio</title>
+  <script src="app.js" defer></script>
+  <link rel="icon" type="image/jpg" href="svg/graph.svg"/>
+  <title>ADO DRAGICEVIC | Portfolio</title>
 </head>
 <body>
   
@@ -96,6 +98,7 @@
       <h2 class="title--secondary">Skills</h2>
       <h4 class="title--tertiary">Primary</h4>
       <ul class="skills__list">
+        <div class="row">
         <li class="skills__list-item">
           <img src="/svg/wordpress.svg" alt="wordPress">
           WordPress
@@ -108,6 +111,8 @@
           <img src="/svg/sass.svg" alt="sass">
           Sass
         </li>
+      </div>
+      <div class="row">
         <li class="skills__list-item">
           <img src="/svg/javascript.svg" alt="javaScript">
           JavaScript
@@ -120,6 +125,7 @@
           <img src="/svg/react.svg" alt="react.js">
           React.js
         </li>
+      </div>
       </ul>
       <h4 class="title--tertiary">Secondary</h4>
       <p class="skills__secondary-list">
@@ -165,9 +171,7 @@
           <p class="projects__description"> Object Oriented Programming | JS | animations | 7 in 1 Sass </p>
 
         </a>
-      </div>
 
-      <div class="projects__container">
         <a class="projects__card" href="https://github.com/AdoDragicevic/intense-traveller" target="_blank">
 
           <h5 class="projects__card-header">Intense Traveller</h5>
@@ -179,14 +183,14 @@
 
           <h5 class="projects__card-header">EMBARGO</h5>
           <img class="projects__img" src="/svg/dove.svg" alt="">
-          <p class="projects__description"> WP | Web Design | Human rights festival website </p>
+          <p class="projects__description"> WP | Design & Development | Human rights festival website </p>
 
         </a>
-        <a class="projects__card" href="" target="_blank">
+        <a class="projects__card" href="/pdf/graphic_design_projects.pdf" target="_blank">
 
           <h5 class="projects__card-header">Graphic Design</h5>
           <img class="projects__img" src="/svg/poster.svg" alt="">
-          <p class="projects__description"> Some of the graphc design projects I made </p>
+          <p class="projects__description"> Some of the graphic design projects I made </p>
 
         </a>
         <a class="projects__card" href="https://github.com/AdoDragicevic?tab=repositories" target="_blank">
@@ -196,8 +200,10 @@
           <p class="projects__description"> Find 20+ projects on my GitHub account </p>
 
         </a>
-        
       </div>
+
+      
+        
     </section>
 
     <section id="values" class="values">
@@ -299,8 +305,6 @@
       </li>
     </ul>
   </div>
-
-  <script src="app.js"></script>
 
 </body>
 </html>
