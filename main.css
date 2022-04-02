@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
 }
 
 :root {
@@ -37,6 +36,7 @@ html {
 }
 
 body {
+  font-family: sans-serif;
   background-color: var(--color-primary);
   color: var(--color-white);
   position: relative;
@@ -310,6 +310,7 @@ a {
 
 .about__content {
   display: flex;
+  align-items: center;
   color: var(--color-primary);
 }
 
@@ -335,7 +336,6 @@ a {
   font-size: 16px;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 @media screen and (max-width: 1020px) {
