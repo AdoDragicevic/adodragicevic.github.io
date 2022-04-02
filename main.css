@@ -525,9 +525,8 @@ a {
 
 .footer__link-home {
   position: absolute;
+  left: 30px;
   top: 50%;
-  transform: translateY(-50%);
-  left: 50px;
   color: white;
   letter-spacing: 1px;
   border-bottom: 2px solid white;
@@ -539,8 +538,15 @@ a {
 }
 
 @media screen and (max-width: 620px) {
+  .footer {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    height: 180px;
+  }
   .footer__link-home {
-    display: none;
+    position: relative;
+    left: auto;
+    top: auto;
   }
 }
 
