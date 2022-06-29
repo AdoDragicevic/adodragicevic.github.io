@@ -175,6 +175,24 @@ a {
   color: var(--color-primary);
 }
 
+.navbar__btn:hover .navbar__btn-content span {
+  background-color: var(--color-secondary);
+}
+
+.navbar__btn-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.navbar__btn-content span {
+  width: 1.2rem;
+  height: 2px;
+  margin: 2.2px 0;
+  background-color: var(--color-tertiary);
+}
+
 @media screen and (max-width: 830px) {
   .navbar {
     justify-content: flex-end;
@@ -183,7 +201,9 @@ a {
     display: none;
   }
   .navbar__btn {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
