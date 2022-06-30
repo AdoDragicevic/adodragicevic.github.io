@@ -660,6 +660,36 @@ a {
   color: var(--color-white);
 }
 
+.contact-icon {
+  filter: invert(12%) sepia(31%) saturate(7%) hue-rotate(22deg) brightness(900%) contrast(96%);
+  margin-bottom: -1rem;
+}
+
+.contact-icon:hover {
+  filter: invert(69%) sepia(94%) saturate(1298%) hue-rotate(170deg) brightness(110%) contrast(97%);
+}
+
+.contact-icon--1 {
+  width: 9rem;
+  height: 9rem;
+  margin-bottom: -2.5rem;
+}
+
+.contact-icon--2 {
+  width: 6.5rem;
+  height: 6.5rem;
+}
+
+.contact-icon--3 {
+  width: 7rem;
+  height: 7rem;
+}
+
+.contact-icon--small {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
 .overlay {
   position: fixed;
   top: 0;
@@ -668,7 +698,7 @@ a {
   width: 100vw;
   background-color: var(--color-primary);
   opacity: 0;
-  z-index: 1000;
+  z-index: 9000;
   animation: fadeIn .3s ease-in-out forwards;
 }
 
@@ -685,21 +715,20 @@ a {
 }
 
 .overlay__option {
-  margin-bottom: 20px;
   text-decoration: none;
   color: var(--color-white);
-  transition: all .5s ease;
+  transition: all .4s ease;
+  margin-bottom: .5rem;
 }
 
 .overlay__option:hover {
-  transform: scale(1.2);
-  color: var(--color-tertiary);
+  transform: scale(1.1);
+  color: #60D7FA;
 }
 
 .overlay__option-name {
   font-size: 15px;
   text-align: center;
-  margin-top: -10px;
 }
 
 .overlay__option:nth-of-type(1) {
