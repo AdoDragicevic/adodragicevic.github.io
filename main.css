@@ -669,6 +669,12 @@ a {
   filter: invert(69%) sepia(94%) saturate(1298%) hue-rotate(170deg) brightness(110%) contrast(97%);
 }
 
+@media screen and (max-width: 720px) {
+  .contact-icon {
+    transform: scale(.75);
+  }
+}
+
 .contact-icon--1 {
   width: 9rem;
   height: 9rem;
@@ -755,6 +761,10 @@ a {
   }
   .overlay__option-name {
     font-size: 12px;
+    margin-top: -.8rem;
+  }
+  .overlay__option-name--3 {
+    margin-top: -1.2rem;
   }
 }
 
