@@ -2,7 +2,7 @@
 
 ## Portfolio website I designed & developed in 48 h :monocle_face: 
 
-### Visit it on Netlify
+### Visit it here
 https://adodragicevic.github.io/
 
 ### About
