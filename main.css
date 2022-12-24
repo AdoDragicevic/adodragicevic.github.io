@@ -7,6 +7,7 @@
 :root {
   --color-primary: #212847;
   --color-secondary: #273854;
+  --color-secondary-light: #717e94;
   --color-tertiary: #61DAFB;
   --color-gray: #626779;
   --color-white: #F7F7FA;
@@ -110,6 +111,20 @@ a {
 
 .btn:active {
   transform: translateY(5px);
+}
+
+.about__download-cv {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.about__link {
+  border-bottom: 2px solid var(--color-gray);
+  color: 2px solid var(--color-gray);
+  font-size: 1rem;
+  letter-spacing: 2px;
+  padding: 3px;
+  transition: all .5s;
 }
 
 .checkpoints__list {
@@ -265,62 +280,19 @@ a {
 }
 
 .intro__quote {
-  text-align: justify;
+  text-align: center;
   max-width: 750px;
   margin: 30px auto 60px;
   font-size: 32px;
   line-height: 1.4;
-  color: var(--color-gray);
+  letter-spacing: 2px;
+  color: var(--color-secondary-light);
 }
 
 @media screen and (max-width: 830px){
   .intro__quote {
     max-width: 550px;
     font-size: 20px;
-  }
-}
-
-.intro__quote--strong {
-  color: var(--color-gray);
-  font-weight: 400;
-}
-
-#strong-1 {
-  animation: grayToWhite 1s ease-in forwards;
-  animation-delay: .3s;
-}
-
-#strong-2 {
-  animation: grayToWhite 1s ease-in forwards;
-  animation-delay: .6s;
-}
-
-#strong-3 {
-  animation: grayToWhite 1s ease-in forwards;
-  animation-delay: .9s;
-}
-
-#strong-4 {
-  animation: grayToWhite 1s ease-in forwards;
-  animation-delay: 1.2s;
-}
-
-#strong-5 {
-  animation: grayToWhite 1s ease-in forwards;
-  animation-delay: 1.5s;
-}
-
-#strong-6 {
-  animation: grayToWhite 1.8s ease-in forwards;
-  animation-delay: 1.8s;
-}
-
-@keyframes grayToWhite {
-  0% {
-    color: var(--color-gray);
-  }
-  100% {
-    color: var(--color-white);
   }
 }
 
@@ -500,6 +472,11 @@ a {
   width:50px;
   height: 50px;
   margin: 15px auto;
+}
+
+.projects__img--delivery {
+  width: 60px;
+  height: 60px;
 }
 
 .projects__description {
