@@ -316,6 +316,7 @@ a {
   letter-spacing: 1px;
   font-size: 15px;
   color: var(--color-primary);
+  text-align: justify;
 }
 
 .about__text p {
