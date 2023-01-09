@@ -296,6 +296,30 @@ a {
   }
 }
 
+.intro__quote--1,
+.intro__quote--2,
+.intro__quote--3,
+.intro__quote--4,
+.intro__quote--5 {
+  animation: fadeIn 2s ease forwards;
+}
+
+.intro__quote--2 {
+  animation-delay: .1s;
+}
+
+.intro__quote--3 {
+  animation-delay: .2s;
+}
+
+.intro__quote--4 {
+  animation-delay: .3s;
+}
+
+.intro__quote--5 {
+  animation-delay: .4s;
+}
+
 .about {
   padding-bottom: 60px;
   background-color: var(--color-white);
